@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     DSPManager \
     libcyanogen-dsp \
+    CMFileManager \
     LockClock
 
 # PA Packages
@@ -101,11 +102,14 @@ PRODUCT_PACKAGES += \
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Scarabaeus.ogg \
+    ro.config.ringtone=xperia_z_rise.ogg \
     ro.config.notification_sound=Antimony.ogg \
     ro.config.alarm_alert=Scandium.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+
+PRODUCT_COPY_FILES += \
+    vendor/houstonn/prebuilt/common/etc/init.d/S98cpu_sleep:system/etc/init.d/S98cpu_sleep
 
 # Inherit common build.prop overrides
 -include vendor/rootbox/configs/common_versions.mk
