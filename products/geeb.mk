@@ -15,7 +15,7 @@ OVERLAY_TARGET := pa_xhdpi
 
 # Setup device specific product configuration
 PRODUCT_NAME := rootbox_geeb
-PRODUCT_BRAND := LG
+PRODUCT_BRAND := LGE
 PRODUCT_DEVICE := geeb
 PRODUCT_MODEL := Optimus G
 PRODUCT_MANUFACTURER := LGE
@@ -25,4 +25,4 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=occam BUILD_FINGERPRINT=google/gee/
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/houstonn/prebuilt/common/media/test-3-ani.zip:system/media/bootanimation.zip
+    vendor/rootbox/prebuilt/common/bootanimation/test-3-ani.zip:system/media/bootanimation.zip
