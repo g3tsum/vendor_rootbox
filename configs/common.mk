@@ -119,7 +119,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 PRODUCT_COPY_FILES += \
-    vendor/houstonn/prebuilt/common/etc/init.d/S98cpu_sleep:system/etc/init.d/S98cpu_sleep
+    vendor/rootbox/prebuilt/common/etc/init.d/98cpu_sleep:system/etc/init.d/98cpu_sleep
 
 # Inherit common build.prop overrides
 -include vendor/rootbox/configs/common_versions.mk
