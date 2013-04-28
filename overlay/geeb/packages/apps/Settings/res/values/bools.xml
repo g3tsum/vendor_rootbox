@@ -20,4 +20,5 @@
     <!-- Whether device has hardware buttons -->
     <bool name="has_hardware_buttons">true</bool>
 
+    <bool name="has_advanced_settings">true</bool>
 </resources>
