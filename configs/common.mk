@@ -18,6 +18,7 @@ PRODUCT_PACKAGES += \
     Microbes \
     PermissionsManager \
     ROMControl \
+    TricksterMod \
     Superuser \
     su \
     Torch
