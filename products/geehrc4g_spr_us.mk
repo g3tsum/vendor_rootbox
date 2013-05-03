@@ -11,7 +11,7 @@ $(call inherit-product, vendor/rootbox/configs/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/geeb
 
 # CDMATools
-PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/CDMATools
+# PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/CDMATools
 
 # PA OVERLAY_TARGET
 OVERLAY_TARGET := pa_xhdpi
@@ -41,5 +41,5 @@ PRODUCT_COPY_FILES += \
     vendor/rootbox/prebuilt/common/media/sounds/xperia2_z.ogg:system/media/audio/ringtones/xperia2_z.ogg \
     vendor/rootbox/prebuilt/common/media/sounds/Whistle.ogg:system/media/audio/notifications/s_whistle.ogg
 
-PRODUCT_PACKAGES += \
-    CDMATools
+# PRODUCT_PACKAGES += \
+#    CDMATools
