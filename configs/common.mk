@@ -127,3 +127,9 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/rootbox/configs/themes_common.mk
+
+# Bring in all audio files
+include frameworks/base/data/sounds/NewAudio.mk
+
+# Extra Ringtones
+include frameworks/base/data/sounds/AudioPackageNewWave.mk
