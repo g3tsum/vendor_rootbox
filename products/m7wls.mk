@@ -11,7 +11,7 @@ $(call inherit-product, vendor/rootbox/configs/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/m7
 
 # PA OVERLAY_TARGET
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := pa_xxhdpi
 
 # Setup device specific product configuration
 PRODUCT_NAME := rootbox_m7wls
@@ -19,6 +19,7 @@ PRODUCT_BRAND := HTC
 PRODUCT_DEVICE := m7wls
 PRODUCT_MODEL := HTC One
 PRODUCT_MANUFACTURER := HTC
+PRODUCT_LOCALES += xxhdpi
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=htc_m7wls BUILD_FINGERPRINT=htc/bm/m7wls:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="m7-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
