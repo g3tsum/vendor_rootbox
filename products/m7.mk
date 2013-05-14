@@ -26,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=htc_m7 BUILD_FINGERPRINT=htc/bm/m7:
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/rootbox/prebuilt/common/bootanimation/google_sm.zip:system/media/bootanimation.zip
+    vendor/rootbox/prebuilt/common/bootanimation/m7-boot1.zip:system/media/bootanimation.zip
 
 PRODUCT_COPY_FILES += \
     vendor/rootbox/prebuilt/common/app/com.miuimusic232.apk:system/app/com.miuimusic232.apk
