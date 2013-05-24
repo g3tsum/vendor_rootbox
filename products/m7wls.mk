@@ -1,11 +1,17 @@
-# Inherit AOSP device configuration for m7
-$(call inherit-product, device/htc/m7wls/full_m7wls.mk)
+# Inherit AOSP device configuration for m7wls
+$(call inherit-product, device/htc/m7wls/device_7wls.mk)
 
 # Inherit CDMA common stuff
 $(call inherit-product, vendor/rootbox/configs/cdma.mk)
 
 # Inherit RootBox common bits
 $(call inherit-product, vendor/rootbox/configs/common.mk)
+
+# Inherit houstonn sound package
+$(call inherit-product, vendor/rootbox/configs/soundpackage.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # M7 Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/m7
@@ -26,15 +32,4 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=htc_m7wls BUILD_FINGERPRINT=htc/bm/
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/rootbox/prebuilt/common/bootanimation/m7-bootani.zip:system/media/bootanimation.zip
-
-PRODUCT_COPY_FILES += \
-    vendor/rootbox/prebuilt/common/app/com.miuimusic232.apk:system/app/com.miuimusic232.apk
-
-PRODUCT_COPY_FILES += \
-    vendor/rootbox/prebuilt/common/media/sounds/xperia.ogg:system/media/audio/ringtones/xperia.ogg \
-    vendor/rootbox/prebuilt/common/media/sounds/xperia_z_breeze.ogg:system/media/audio/ringtones/xperia_z_breeze.ogg \
-    vendor/rootbox/prebuilt/common/media/sounds/xperia_z_rise.ogg:system/media/audio/ringtones/xperia_z_rise.ogg \
-    vendor/rootbox/prebuilt/common/media/sounds/xperia1_z.ogg:system/media/audio/ringtones/xperia1_z.ogg \
-    vendor/rootbox/prebuilt/common/media/sounds/xperia2_z.ogg:system/media/audio/ringtones/xperia2_z.ogg \
-    vendor/rootbox/prebuilt/common/media/sounds/Whistle.ogg:system/media/audio/notifications/s_whistle.ogg
+    vendor/rootbox/prebuilt/common/bootanimation/m7-boot3.zip:system/media/bootanimation.zip
