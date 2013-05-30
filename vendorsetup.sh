@@ -1,8 +1,10 @@
 add_lunch_combo rootbox_geeb-userdebug
 add_lunch_combo rootbox_geehrc_intl-userdebug
 add_lunch_combo rootbox_geehrc4g_spr_us-userdebug
-add_lunch_combo rootbox_m7-userdebug
-add_lunch_combo rootbox_m7wls-userdebug
+add_lunch_combo rootbox_m7ul-userdebug
+add_lunch_combo rootbox_m7att-userdebug
+add_lunch_combo rootbox_m7tmo-userdebug
+add_lunch_combo rootbox_m7spr-userdebug
 add_lunch_combo rootbox_d2att-userdebug
 add_lunch_combo rootbox_d2tmo-userdebug
 add_lunch_combo rootbox_d2vzw-userdebug

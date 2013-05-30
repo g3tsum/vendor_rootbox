@@ -1,5 +1,5 @@
-# Inherit AOSP device configuration for m7
-$(call inherit-product, device/htc/m7/device_m7.mk)
+# Inherit AOSP device configuration for m7ul
+$(call inherit-product, device/htc/m7ul/full_m7ul.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/rootbox/configs/gsm.mk)
@@ -20,18 +20,18 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/m7
 OVERLAY_TARGET := pa_xxhdpi
 
 # Setup device specific product configuration
-PRODUCT_NAME := rootbox_m7
+PRODUCT_NAME := rootbox_m7ul
 PRODUCT_BRAND := HTC
-PRODUCT_DEVICE := m7
+PRODUCT_DEVICE := m7ul
 PRODUCT_MODEL := HTC One
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_LOCALES += xxhdpi
 
 # Release name
-PRODUCT_RELEASE_NAME := m7
+PRODUCT_RELEASE_NAME := m7ul
 
 # Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=htc_m7 BUILD_FINGERPRINT=htc/bm/m7:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="m7-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=htc_m7ul BUILD_FINGERPRINT=htc/bm/m7:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="m7-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \

@@ -1,5 +1,5 @@
-# Inherit AOSP device configuration for m7wls
-$(call inherit-product, device/htc/m7wls/device_7wls.mk)
+# Inherit AOSP device configuration for m7spr
+$(call inherit-product, device/htc/m7spr/full_m7spr.mk)
 
 # Inherit CDMA common stuff
 $(call inherit-product, vendor/rootbox/configs/cdma.mk)
@@ -20,9 +20,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/m7
 OVERLAY_TARGET := pa_xxhdpi
 
 # Setup device specific product configuration
-PRODUCT_NAME := rootbox_m7wls
+PRODUCT_NAME := rootbox_m7spr
 PRODUCT_BRAND := HTC
-PRODUCT_DEVICE := m7wls
+PRODUCT_DEVICE := m7spr
 PRODUCT_MODEL := HTC One
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_LOCALES += xxhdpi

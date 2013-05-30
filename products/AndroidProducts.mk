@@ -17,7 +17,9 @@ $(LOCAL_DIR)/toro.mk \
 $(LOCAL_DIR)/geeb.mk \
 $(LOCAL_DIR)/geehrc4g_spr_us.mk \
 $(LOCAL_DIR)/geehrc_intl.mk \
-$(LOCAL_DIR)/m7.mk \
-$(LOCAL_DIR)/m7wls.mk \
+$(LOCAL_DIR)/m7ul.mk \
+$(LOCAL_DIR)/m7att.mk \
+$(LOCAL_DIR)/m7tmo.mk \
+$(LOCAL_DIR)/m7spr.mk \
 $(LOCAL_DIR)/t0lte.mk \
 $(LOCAL_DIR)/t0lteatt.mk
