@@ -4,6 +4,9 @@ $(call inherit-product, device/lge/geeb/full_geeb.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/rootbox/configs/gsm.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/rootbox/configs/nfc_enhanced.mk)
+
 # Inherit RootBox common bits
 $(call inherit-product, vendor/rootbox/configs/common.mk)
 

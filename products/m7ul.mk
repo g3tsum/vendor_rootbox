@@ -11,7 +11,7 @@ $(call inherit-product, vendor/rootbox/configs/common.mk)
 $(call inherit-product, vendor/rootbox/configs/soundpackage.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/rootbox/configs/nfc_enhanced.mk)
 
 # M7 Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/m7
