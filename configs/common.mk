@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ParanoidPreferences
 
+# PA HALO
+PRODUCT_PACKAGES += \
+    HALO
+
 # RootBox build.prop tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.amr.wideband=1 \
