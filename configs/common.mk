@@ -35,14 +35,9 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock
 
-# PA Packages
-ifdef PA_PREF_FIX
-PRODUCT_PACKAGES += \
-    PaPrefs
-else 
+# PA Packages 
 PRODUCT_PACKAGES += \
     ParanoidPreferences
-endif
 
 # RootBox build.prop tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
