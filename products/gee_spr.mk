@@ -1,8 +1,11 @@
 # Inherit AOSP device configuration for gee
-$(call inherit-product, device/lge/geehrc4g_spr_us/full_geehrc4g_spr_us.mk)
+$(call inherit-product, device/lge/gee_spr/full_gee_spr.mk)
 
 # Inherit CDMA common stuff
 $(call inherit-product, vendor/rootbox/configs/cdma.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/rootbox/configs/nfc_enhanced.mk)
 
 # Inherit RootBox common bits
 $(call inherit-product, vendor/rootbox/configs/common.mk)
@@ -20,9 +23,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rootbox/overlay/geeb
 OVERLAY_TARGET := pa_xhdpi
 
 # Setup device specific product configuration
-PRODUCT_NAME := rootbox_geehrc4g_spr_us
+PRODUCT_NAME := rootbox_gee_spr
 PRODUCT_BRAND := LGE
-PRODUCT_DEVICE := geehrc4g_spr_us
+PRODUCT_DEVICE := gee_spr
 PRODUCT_MODEL := Optimus G
 PRODUCT_MANUFACTURER := LGE
 
